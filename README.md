@@ -1,0 +1,5 @@
+# Hierarchical Kolmogorov-Arnold Network (HKAN)
+
+This repository contains the implementation of the Hierarchical Kolmogorov-Arnold Network (HKAN) model, see [tutorial](https://github.com/rodakt/hkan/blob/main/tutorial.ipynb) for a quick start.
+
+HKAN is a novel network architecture that offers a competitive alternative to the recently proposed [Kolmogorov-Arnold Network (KAN)](https://github.com/KindXiaoming/pykan/tree/master). Unlike KAN, which relies on backpropagation, HKAN adopts a randomized learning approach, where the parameters of its basis functions are fixed, and linear aggregations are optimized using least-squares regression. HKAN utilizes a hierarchical multi-stacking framework, with each layer refining the predictions from the previous one by solving a series of linear regression problems. This non-iterative training method simplifies computation and eliminates sensitivity to local minima in the loss function.

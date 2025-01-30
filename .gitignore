@@ -1,0 +1,54 @@
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.rar
+*.7z
+
+# Datasets (assuming common formats, add more if needed)
+*.csv
+*.xlsx
+*.json
+*.xml
+*.db
+*.sqlite
+
+# HTML files
+*.html
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# VS Code settings
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python virtual environment
+venv/
+env/
+.env
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
