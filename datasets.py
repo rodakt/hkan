@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 import numpy as np
@@ -31,11 +32,17 @@ NAMES = [
 ]
 
 
-PATH = Path(".") / "data"
+# PATH = Path(".") / "data"
 
 
 def load_dataset(name):
     """Load dataset by name."""
+    
+    base_path = os.path.dirname(__file__)
+    PATH = Path(base_path) / "data"
+    
+    if not PATH.exists():
+        raise FileNotFoundError(f"Dataset folder {PATH} not found.")
     
     if name not in NAMES:
         raise ValueError(f"Dataset {name} not found.")
